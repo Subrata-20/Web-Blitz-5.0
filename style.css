@@ -1,0 +1,118 @@
+style--body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+  }
+  .example {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid #333;
+  }
+  .color-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733;
+  }
+  .background-box {
+    width: 100%;
+    height: 150px;
+    background-image: url('https://via.placeholder.com/400');
+    background-size: cover;
+    background-position: center;
+  }
+  .font-example {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  .box-model {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 20px;
+    background-color: #f1c40f;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    background: #3498db;
+    padding: 10px;
+  }
+  .flex-item {
+    background: #2ecc71;
+    padding: 20px;
+    margin: 5px;
+    color: #fff;
+  }
+  .position-example {
+    position: relative;
+    height: 100px;
+    background: #9b59b6;
+  }
+  .position-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: #e74c3c;
+  }
+  .transition-box {
+    width: 100px;
+    height: 100px;
+    background: #1abc9c;
+    transition: background 0.5s, transform 0.5s;
+  }
+  .transition-box:hover {
+    background: #16a085;
+    transform: scale(1.2);
+  }
+  .transform-box {
+    width: 100px;
+    height: 100px;
+    background: #f39c12;
+    transform: rotate(45deg);
+    margin: 20px auto;
+  }
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+  }
+  .animation-box {
+    width: 100px;
+    height: 100px;
+    background: #e67e22;
+    animation: slide 2s infinite;
+  }
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+    .flex-container {
+      flex-direction: column;
+    }
+  }
